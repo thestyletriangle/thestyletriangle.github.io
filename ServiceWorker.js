@@ -1,9 +1,9 @@
 const cacheName = "The Style Triangle-The Style Triangle-0.1";
 const contentToCache = [
-    "Build/v2.loader.js",
-    "Build/v2.framework.js.unityweb",
-    "Build/v2.data.unityweb",
-    "Build/v2.wasm.unityweb",
+    "Build/thestyletriangle.github.io.loader.js",
+    "Build/thestyletriangle.github.io.framework.js.unityweb",
+    "Build/thestyletriangle.github.io.data.unityweb",
+    "Build/thestyletriangle.github.io.wasm.unityweb",
     "TemplateData/style.css"
 
 ];
