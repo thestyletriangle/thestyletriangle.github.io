@@ -7,8 +7,52 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="manifest" href="manifest.webmanifest">
+	
+	<style>
+	  html, body {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		width: 100%;
+
+		background-image: url("background.jpg"); /* your PNG */
+		background-size: cover;      /* stretch to full screen */
+		background-position: center; /* keep centered */
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	  }
+	  
+	  #center-image-container {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    pointer-events: none; /* lets clicks pass to Unity */
+  }
+
+  #center-image {
+    max-width: 80vw;
+    max-height: 80vh;
+
+    width: auto;
+    height: auto;
+
+    aspect-ratio: 1536 / 1024;
+  }
+	</style>
   </head>
   <body>
+	<div id="center-image-container">
+		<img id="center-image" src="opening.png">
+	</div>
     <div id="unity-container">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
